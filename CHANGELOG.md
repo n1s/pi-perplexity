@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.4.1] - 2026-10-30
+
+### Fixed
+
+- Browser credential paste now recognizes Perplexity's new per-account `__Secure-pplx.session.<account-id>` cookies (NextAuth v4 JWE) in addition to `__Secure-next-auth.session-token`.
+- Search requests send the `x-pplx-account` header derived from stored cookies, so the endpoint recognizes the Pro/Max subscription instead of answering as anonymous ("Sign up and repeat your request.").
+
 ## [0.4.0] - 2026-07-16
 
 ### Added
